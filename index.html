@@ -57,63 +57,65 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	}
 </style>
 <style>
- /* --- Estilos para el Formulario de Masterbase (Llamativo) --- */
+    /* --- Estilos para el Formulario de Masterbase v2 --- */
 
- #formulario.llamativo {
-  background-color: #0a5899; /* Un azul más intenso y moderno, similar a algunos elementos de la página */
-  color: #fff; /* Texto en color blanco para mayor contraste */
-  padding: 80px 20px; /* Más espacio para que respire la sección */
-  text-align: center;
-  /* Nuevo efecto visual sutil */
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
-  background-size: 20px 20px;
- }
+    #formulario.cta-formulario-personalizado {
+        /* Usamos la misma imagen de fondo que otra sección para mantener la coherencia */
+        background-image: url('wp-content/uploads/2018/12/banner-callout.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; /* Efecto parallax sutil */
+        position: relative;
+        color: #ffffff;
+        text-align: center;
+    }
 
- .formulario-contenedor {
-  max-width: 700px;
-  margin: 0 auto;
- }
+    /* La capa oscura es clave para la legibilidad del texto sobre la imagen */
+    #formulario .dark-overlay {
+        background-color: rgba(10, 25, 40, 0.7); /* Un overlay oscuro y elegante */
+        padding: 80px 20px;
+    }
 
- #formulario.llamativo h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3em; /* Título más grande para impacto */
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para que destaque el texto */
- }
+    #formulario h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.8em;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra sutil para el texto */
+    }
 
- #formulario.llamativo p.subtitulo {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5em; /* Subtítulo más grande y claro */
-  color: #f0f0f0;
-  margin-bottom: 40px;
- }
+    #formulario .subtitulo {
+        font-family: "Lato", sans-serif;
+        font-size: 1.3em;
+        font-weight: 300;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        opacity: 0.9;
+    }
 
- .boton-contenedor {
-  /* Centra el botón si no ocupa todo el ancho */
- }
+    #formulario .cta-button {
+        display: inline-block;
+        padding: 16px 38px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.1em;
+        font-weight: 700;
+        color: #333; /* Texto oscuro para contraste en botón claro */
+        background-color: #fcb900; /* Color ámbar/dorado que está en la paleta del tema */
+        text-decoration: none;
+        border-radius: 5px;
+        border-bottom: 3px solid #d29c00;
+        transition: all 0.3s ease;
+    }
 
- .formulario-boton {
-  display: inline-block;
-  padding: 18px 40px; /* Botón más grande */
-  font-family: "Lato", sans-serif;
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #fff;
-  background-color: #ffc107; /* Un color amarillo/dorado brillante para destacar */
-  text-decoration: none;
-  border-radius: 8px; /* Bordes más redondeados */
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Sombra para que el botón parezca "saltar" */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
- }
-
- .formulario-boton:hover {
-  background-color: #e0a800; /* Tono más oscuro al pasar el mouse */
-  transform: translateY(-3px); /* Ligero movimiento hacia arriba al pasar el mouse */
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
-  color: #fff;
- }
+    #formulario .cta-button:hover {
+        background-color: #ffc72e;
+        transform: translateY(-3px); /* Efecto de elevación sutil */
+        border-bottom-width: 5px;
+        color: #000;
+    }
 </style>
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
@@ -1244,16 +1246,16 @@ var revapi1,
         </section>
         <!-- //Main Content -->
 
-<section id="formulario" class="llamativo">
- <div class="formulario-contenedor">
-  <h2>¿Buscas tu Propiedad Ideal en Santo Domingo?</h2>
-  <p class="subtitulo">¡Recibe listados personalizados directamente en tu correo!</p>
-  <div class="boton-contenedor">
-   <a href="https://publicsmartview.mba.eu.masterbase.com/v1/682be41946cca4e4928dfcec" target="_blank" class="cta-button formulario-boton">
-    ¡Quiero mi Listado Personalizado!
-   </a>
+<section id="formulario" class="cta-formulario-personalizado">
+  <div class="dark-overlay">
+    <div class="container">
+      <h2>¿Buscas Algo Específico?</h2>
+      <p class="subtitulo">Recibe un listado de propiedades curado exclusivamente para ti. Dinos qué necesitas y te ayudaremos a encontrarlo.</p>
+      <a href="https://publicsmartview.mba.eu.masterbase.com/v1/682be41946cca4e4928dfcec" target="_blank" class="cta-button">
+        Solicitar Mi Listado Personalizado
+      </a>
+    </div>
   </div>
- </div>
 </section>
 <section class="page-builder-two "><div class="container"></div><div class="clear"></div></section>...
         <!-- Footer Widgets --><div id="footer-widgets"><div class="dark-overlay"><div class="container">
